@@ -2,10 +2,9 @@ body {
     background-color: #0A090A;
     color: white;
     font-family: 'Roboto', sans-serif;
-    background-image: url('../img/main-bg.jpg');
+    background-image: url('../img/main-bg.png');
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: cover;
 }
 
 .container {
@@ -71,6 +70,10 @@ body {
     height: 40px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.short-info {
+    margin-right: 3%;
 }
 
 .info {
@@ -154,14 +157,14 @@ body {
 .content {
     background-color: white;
     border-radius: 3px;
-    padding: 43px 50px;
+    padding: 3% 4%;
     color: black;
     display: flex;
     justify-content: space-between;
 }
 
 .poster {
-    margin-top: -80px;
+    margin-top: -40%;
     margin-bottom: 20px;
 }
 
@@ -193,6 +196,11 @@ body {
 .tabs {
     display: flex;
     margin-left: 45px;
+    margin-bottom: 4%;
+}
+
+.tabs-item:not(:last-child) {
+    margin-right: 4%;
 }
 
 .tabs-item {
@@ -225,19 +233,31 @@ body {
     margin-left: 14px;
 }
 
+.text {
+    font-size: 16px;
+    line-height: 140%;
+    margin-top: 0;
+}
+
+.subscribe-form {
+    display: flex;
+    margin-bottom: 48px;
+}
+
 .subscribe-header {
-    margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-size: 16px;
+    line-height: 150%;
 }
 
 .subscribe-field {
     padding: 12px 15px;
-    margin-top: 14px;
-    margin-bottom: 48px;
     border: none;
     color: #9B9B9B;
     background: rgba(241, 241, 241, 0.5);
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 
 .subscribe-button {
@@ -257,4 +277,106 @@ body {
 
 ::placeholder {
     color: #AEAEAE;
+  }
+
+  @media(max-width: 1200px) {
+      .container {
+          max-width: 960px;
+      }
+
+      .tabs-item {
+          font-size: 16px;
+      }
+  }
+
+  @media(max-width: 992px) {
+      .container {
+          max-width: 740px;
+      }
+
+      .tabs {
+        flex-wrap: wrap;
+        flex-basis: 20%;
+      }
+
+      .tabs-item {
+          line-height: 2;
+      }
+
+      .full-content {
+          flex-wrap: wrap;
+      }
+
+      .tabs-content {
+          margin-bottom: 5%;
+      }
+
+      .text, .actors-list {
+          font-size: 14px;
+      }
+  }
+
+  @media(max-width: 768px) {
+      .container {
+          max-width: 540px;
+      }
+
+      .more {
+          display: none;
+      }
+
+      .tabs-item {
+          flex-basis: 33%;
+      }
+
+      .tabs-content {
+          margin-right: 0;
+      }
+  }
+
+  @media(max-width: 578px) {
+      .container {
+          max-width: 90%;
+      }
+
+      .header {
+          flex-wrap: wrap;
+      }
+
+      .search {
+          flex-basis: 100%;
+          order: 3;
+          margin-top: 5%;
+      }
+
+      .content {
+          flex-wrap: wrap;
+      }
+
+      .actors-list, .actors-title {
+          display: none;
+      }
+
+      .short-info {
+          margin-bottom: 5%;
+          margin-right: 0;
+      }
+
+      .button {
+          width: 100%;
+      }
+
+      .movie-info {
+          flex-wrap: wrap;
+      }
+
+      .play {
+          flex-basis: 100%;
+      }
+
+      .poster {
+          display: inline-block;
+          width: 100%;
+          margin-top: -20%;
+      }
   }
