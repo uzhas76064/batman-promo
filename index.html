@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/batman.png" type="image/x-png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Бэтмен 2021 - страница о фильме</title>
 </head>
@@ -22,27 +25,28 @@
             </form>
             <div class="user">
                 <img src="img\bookmark.svg" alt="" class="bookmark">
-                <img src="img\avatar.png" alt="" class="avatar">
+                <img src="img\user.png" alt="" class="avatar">
             </div>
         </header>
 
         <main class="main">
-            <h1 class="title">Бэтмен</h1>
-            <small class="title-en">The Batman</small>
+            <h1 class="title animated zoomIn delay-1s">Бэтмен</h1>
+            <small class="title-en animated zoomIn delay-1s">The Batman</small>
             <div class="info">
-                <div class="movie-info">
+                <div class="movie-info animated fadeInUp delay-2s">
                     <span class="tag">Фильм</span>
                     <span class="country">США, 2021 год</span>
-                    <a href="" class="play">Смотреть трейлер</a>
+                    <a data-fancybox href="https://www.youtube.com/watch?v=cElcLipGNIA"
+                        class="play animated swing delay-3s">Смотреть трейлер</a>
                 </div>
-                <a href="" class="more">Подробнее</a>
+                <a href="#about" class="more">Подробнее</a>
             </div>
             <div class="content">
                 <div class="short-info">
-                    <img src="img/poster.jpg" alt="" class="poster">
+                    <img src="img/poster.jpg" alt="" class="poster wow fadeInUpBig delay-2s">
                     <button class="button">Буду смотреть</button>
                     <h3 class="actors-title">В главных ролях</h3>
-                    <ul class="actors-list">
+                    <ul class="actors-list wow slideInLeft delay-1s">
                         <li class="actors-list-item">Роберт Паттинсон</li>
                         <li class="actors-list-item">Зои Кравиц</li>
                         <li class="actors-list-item">Колин Фаррелл</li>
@@ -57,19 +61,19 @@
                 </div>
                 <div class="full-info">
                     <nav class="tabs">
-                        <a href="" class="tabs-item tab-active">Описание</a>
-                        <a href="" class="tabs-item">Рецензии</a>
-                        <a href="" class="tabs-item">Премьеры</a>
-                        <a href="" class="tabs-item">Актеры</a>
-                        <a href="" class="tabs-item">Награды</a>
-                        <a href="" class="tabs-item">Факты</a>
-                        <a href="" class="tabs-item">Сайты</a>
-                        <a href="" class="tabs-item">
+                        <a href="#about" class="tabs-item tab-active">Описание</a>
+                        <a href="#reviews" class="tabs-item">Рецензии</a>
+                        <a href="#premieres" class="tabs-item">Премьеры</a>
+                        <a href="#actors" class="tabs-item">Актеры</a>
+                        <a href="#achievements" class="tabs-item">Награды</a>
+                        <a href="#facts" class="tabs-item">Факты</a>
+                        <a href="#sites" class="tabs-item">Сайты</a>
+                        <a href="#" class="tabs-item">
                             <img src="img/bookmark-active.svg" alt="" class="bookmark-added">
                         </a>
                     </nav>
                     <div class="full-content">
-                        <div class="tabs-content">
+                        <div class="tabs-content visible" id="about">
                             <p class="text">Предстоящий американский супергеройский фильм, основанный на одноимённых
                                 комиксах издательства DC Comics. Картина будет выпущена компанией Warner Bros. и будет
                                 перезагрузкой всех фильмов о Бэтмене.</p>
@@ -91,14 +95,33 @@
                                 Детстроук. 8 сентября 2016 года Джефф Джонс подтвердил, что Джо Манганьелло сыграет
                                 наёмника Слейда Уилсона, который, возможно, станет главным злодеем фильма.</p>
                         </div>
+
+                        <div class="tabs-content" id="reviews">
+                            <p class="text">Тут скоро появятся рецензии</p>
+                        </div>
+                        <div class="tabs-content" id="premieres">
+                            <p class="text">Тут скоро появятся премьеры</p>
+                        </div>
+                        <div class="tabs-content" id="actors">
+                            <p class="text">Тут скоро появятся актеры</p>
+                        </div>
+                        <div class="tabs-content" id="achievements">
+                            <p class="text">Тут скоро появятся награды</p>
+                        </div>
+                        <div class="tabs-content" id="facts">
+                            <p class="text">Тут скоро появятся факты</p>
+                        </div>
+                        <div class="tabs-content" id="sites">
+                            <p class="text">Тут скоро появятся сайты</p>
+                        </div>
                         <aside class="advertisement">
                             <h3 class="subscribe-header">Подпишитесь на обновления</h3>
-                           <form action="" class="subscribe-form">
-                               <input type="email" class="subscribe-field" placeholder="Ваш Email">
-                               <button class="subscribe-button">
-                                   <img src="img/check.svg" alt="">
-                               </button>
-                           </form>
+                            <form action="" class="subscribe-form">
+                                <input type="email" class="subscribe-field" placeholder="Ваш Email">
+                                <button class="subscribe-button">
+                                    <img src="img/check.svg" alt="">
+                                </button>
+                            </form>
                             <a href="" class="banner">
                                 <img src="img/banner.jpg" alt="">
                             </a>
@@ -108,6 +131,11 @@
             </div>
         </main>
     </div>
+
+    <script src="js/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
