@@ -223,14 +223,13 @@ body {
 
 .tabs-content {
     margin-right: 70px;
-    display: none;
 }
 
 .visible {
     display: block;
 }
 
-.tab-active {
+.active {
     color: #FF8F27;
 }
 
