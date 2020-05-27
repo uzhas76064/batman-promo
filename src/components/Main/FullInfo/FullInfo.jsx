@@ -13,9 +13,9 @@ import TabFacts from "../Tabs/TabsItems/TabFacts";
 
 const FullInfo = () => {
     return (
-        <div class="full-info">
+        <div className="full-info">
             <Tabs />
-            <div class="full-content">
+            <div className="full-content">
                 <Switch>
                     <Route exact path="/" component={TabAbout}/>
                     <Route path="/reviews" component={TabReview}/>
