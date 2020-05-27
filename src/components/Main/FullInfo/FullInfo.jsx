@@ -11,7 +11,7 @@ const FullInfo = () => {
             <a href="#achievements" class="tabs-item">Награды</a>
             <a href="#facts" class="tabs-item">Факты</a>
             <a href="#sites" class="tabs-item">Сайты</a>
-            <a href="#" class="tabs-item">
+            <a href="#like" class="tabs-item">
                 <img src="img/bookmark-active.svg" alt="" class="bookmark-added"></img>
             </a>
         </nav>
@@ -65,7 +65,7 @@ const FullInfo = () => {
                         <img src="img/check.svg" alt=""></img>
                     </button>
                 </form>
-                <a href="" class="banner">
+                <a href="google.com" class="banner">
                     <img src="img/banner.jpg" alt=""></img>
                 </a>
             </aside>
