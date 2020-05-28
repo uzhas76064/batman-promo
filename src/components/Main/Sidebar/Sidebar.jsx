@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Advertisement = () => {
+const Sidebar = () => {
     return (
         <aside className="advertisement">
             <h3 className="subscribe-header">Подпишитесь на обновления</h3>
@@ -10,11 +10,11 @@ const Advertisement = () => {
                     <img src="img/check.svg" alt=""></img>
                 </button>
             </form>
-            <a href="google.com" className="banner">
+            <a target="__blank" href="https://google.com" className="banner">
                 <img src="img/banner.jpg" alt=""></img>
             </a>
         </aside>
     )
 }
 
-export default Advertisement;
+export default Sidebar;

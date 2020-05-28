@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Tabs from "../Tabs/Tabs";
-import Advertisement from "../Advertisement/Advertisement";
+import Sidebar from "../Sidebar/Sidebar";
 import TabAbout from "../Tabs/TabsItems/TabAbout";
 import TabReview from "../Tabs/TabsItems/TabReview";
 import TabActors from "../Tabs/TabsItems/TabActors";
@@ -25,7 +25,7 @@ const FullInfo = () => {
                     <Route path="/facts" component={TabFacts}/>
                     <Route path="/sites" component={TabSites}/>
                 </Switch>
-                <Advertisement />
+                <Sidebar />
             </div>
         </div>
     );
