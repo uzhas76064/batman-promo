@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #0A090A;
     color: white;
@@ -223,14 +227,13 @@ body {
 
 .tabs-content {
     margin-right: 70px;
-    display: none;
 }
 
 .visible {
     display: block;
 }
 
-.tab-active {
+.active {
     color: #FF8F27;
 }
 
